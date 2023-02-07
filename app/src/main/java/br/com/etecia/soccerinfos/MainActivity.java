@@ -3,8 +3,10 @@ package br.com.etecia.soccerinfos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+    ListView ListaTimes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
