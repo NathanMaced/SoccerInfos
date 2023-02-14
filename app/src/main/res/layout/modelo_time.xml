@@ -2,9 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:background="#F5F5DC"
+    android:layout_margin="10dp"
+    android:background="#DCDCDC"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,6 +29,8 @@
                 android:id="@+id/idNomeTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="SÃO PAULO FUTEBOL CLUBE"
                 android:textAlignment="center"
                 android:textColor="#000"
@@ -42,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
                 android:text="Tricolor Mais Querido do planeta é o único clube brasileiro a ter conquistado a América e o Mundo por três vezes."
                 android:textAlignment="center"
                 android:textColor="#000"
@@ -75,7 +77,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="50dp"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_favorite" />
 
