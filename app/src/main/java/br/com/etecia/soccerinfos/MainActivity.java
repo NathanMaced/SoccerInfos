@@ -13,11 +13,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ListView ListaTimes;
 
-    String titulo [] = {};
-    String descricao [] = {};
-    String avaliacao [] = {};
-    int escudo [] = {};
-
+    String titulo[] = {"São Paulo","Vasco","Flamengo"};
+    String descricao[] = {"O maior do Brasil","Nada a declarar","É o gigante da colina"};
+    String avaliacao[] = {"5,0","1,5","3,0"};
+    int escudo[] = {R.drawable.saopaulo, R.drawable.flamengo,R.drawable.vasco};
 
 
     @Override

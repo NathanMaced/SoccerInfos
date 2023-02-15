@@ -17,7 +17,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/saoPaulo" />
+            android:src="@drawable/saopaulo" />
 
 
         <LinearLayout
@@ -91,6 +91,5 @@
 
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>
