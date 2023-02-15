@@ -6,17 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     ListView ListaTimes;
+
+    String titulo [] = {};
+    String descricao [] = {};
+    String avaliacao [] = {};
+    int escudo [] = {};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MyAdapter adapter = new MyAdapter();
+
         ListaTimes = findViewById(R.id.ListaTimes);
+
+        MyAdapter adapter = new MyAdapter();
 
 
         ListaTimes.setAdapter(adapter);
@@ -41,7 +52,20 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            return null;
+            ImageView escudoTime;
+            TextView nomeTime, descricaoTime, avaliacaoTime;
+
+            View v = getLayoutInflater().inflate(R.layout.modelo_time, null);
+
+            escudoTime = v.findViewById(R.id.idEscudoTime);
+            nomeTime = v.findViewById(R.id.idNomeTime);
+            descricaoTime = v.findViewById(R.id.idDescricaoTime);
+            avaliacaoTime = v.findViewById(R.id.idAvaliacaoTime);
+
+            nomeTime.setText(titulo[i]);
+            descricaoTime.setText(descricao[i]);
+            avaliacaoTime.setText(avaliacao[i]);
+            escudoTime.setImageResource(escudo[i]);
         }
     }
 }
