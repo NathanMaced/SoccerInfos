@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
             descricaoTime.setText(descricao[i]);
             avaliacaoTime.setText(avaliacao[i]);
             escudoTime.setImageResource(escudo[i]);
+
+            return v;
         }
     }
 }
