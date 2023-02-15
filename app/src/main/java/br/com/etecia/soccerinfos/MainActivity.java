@@ -13,11 +13,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ListView ListaTimes;
 
-    String titulo[] = {"São Paulo","Vasco","Flamengo"};
-    String descricao[] = {"O maior do Brasil","Nada a declarar","É o gigante da colina"};
-    String avaliacao[] = {"5,0","1,5","3,0"};
-    int escudo[] = {R.drawable.saopaulo, R.drawable.flamengo,R.drawable.vasco};
-
+    String titulo[] = {"São Paulo", "Vasco", "Flamengo", "Palmeiras", "Corinthians"};
+    String descricao[] = {"O maior do Brasil", "Nada a declarar", "É o gigante da colina", "Sem mundial", "Quarta força"};
+    String avaliacao[] = {"5,0", "1,5", "3,0", "1,0", "0,5"};
+    int escudo[] = {R.drawable.saopaulo, R.drawable.flamengo, R.drawable.vasco, R.drawable.palmeiras, R.drawable.corinthians};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 0;
+            return escudo.length;
         }
 
         @Override
